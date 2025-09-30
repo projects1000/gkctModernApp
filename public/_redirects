@@ -1,0 +1,14 @@
+# Redirect all traffic to index.html for SPA routing
+/*    /index.html   200
+
+# API proxy (if you have an API backend)
+# /api/*  https://your-backend-api.com/api/:splat  200
+
+# Handle specific file types
+/manifest.json    /manifest.json    200
+/sw.js           /sw.js            200
+/favicon.ico     /favicon.ico      200
+
+# Block access to sensitive files
+/.env*           /404.html         404
+/config/*        /404.html         404
